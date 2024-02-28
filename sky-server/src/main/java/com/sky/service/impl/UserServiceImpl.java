@@ -36,9 +36,11 @@ public class UserServiceImpl implements UserService {
      * @return
      */
     public User wxLogin(UserLoginDTO userLoginDTO) {
+
+        // todo 这里openid获取不到, 补充这里可以获取, 不是null o9E9961PdCOuqlM9dVKgqkf77c5A
         String openid = getOpenid(userLoginDTO.getCode());
 
-//        //判断openid是否为空，如果为空表示登录失败，抛出业务异常
+        //判断openid是否为空，如果为空表示登录失败，抛出业务异常
         if(openid == null){
             throw new LoginFailedException(MessageConstant.LOGIN_FAILED);
         }
