@@ -2,6 +2,14 @@ sky:
   wechat:
     appid: 'wxfa73124890036bfb'
     secret: 'd7a46e45242bb679ddb38eb66b044487'
+    # 微信支付相关
+    mchid: 1561414331 # 商户号
+    mchSerialNo: 4B3B3DC35414AD50B1B755BAF8DE9CC7CF407606 # 商户证书序列号
+    privateKeyFilePath: D:\pay\apiclient_key.pem
+    apiV3Key: CZBK51236435wxpay435434323FFDuv3
+    weChatPayCertFilePath: D:\pay\wechatpay_166D96F876F45C7D07CE98952A96EC980368ACFC.pem
+    notifyUrl: https://1626ff09.r15.vip.cpolar.cn/notify/paySuccess # 回调地址, 支付成功后
+    refundNotifyUrl: https://1626ff09.r15.vip.cpolar.cn/notify/refundSuccess
   redis:
     host: localhost
     port: 6379
